@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import { startCheckout } from '../../lib/payments/stripeClient';
 
 const ChooseDumpsterSection = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
   const handleOrderClick = () => {
     startCheckout({ dumpsterSize: '20-yard' }); // Using 20-yard as closest match to 15-yard
   };
@@ -76,8 +73,6 @@ const ChooseDumpsterSection = () => {
             {/* Order Button */}
             <button
               onClick={handleOrderClick}
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
               className="font-display group relative w-full sm:w-auto bg-brand-yellow text-brand-black px-12 py-5 rounded-xl font-bold text-2xl tracking-wider hover:bg-yellow-400 transition-all duration-300 shadow-2xl hover:shadow-brand-yellow/50 hover:scale-105 transform"
             >
               <span className="relative z-10">ORDER NOW</span>
