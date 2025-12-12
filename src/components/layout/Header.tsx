@@ -46,7 +46,7 @@ const Header = () => {
               <button
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
-                className="text-gray-300 hover:text-brand-yellow transition-colors duration-200 text-sm font-medium"
+                className="font-display text-white hover:text-brand-yellow transition-colors duration-200 text-xl tracking-wide"
               >
                 {link.name}
               </button>
@@ -57,13 +57,13 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <a
               href="tel:+19152553867"
-              className="text-gray-300 hover:text-brand-yellow transition-colors duration-200"
+              className="font-display text-white hover:text-brand-yellow transition-colors duration-200 text-xl tracking-wide"
             >
               (915) 255-DUMP
             </a>
             <button
               onClick={handleOrderClick}
-              className="bg-brand-yellow text-brand-black px-6 py-2.5 rounded-lg font-bold hover:bg-yellow-400 transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="font-display bg-brand-yellow text-brand-black px-6 py-3 rounded-lg font-bold text-lg tracking-wide hover:bg-yellow-400 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Order Online
             </button>
@@ -101,27 +101,27 @@ const Header = () => {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden py-4 border-t border-gray-800">
+          <div className="lg:hidden py-4 border-t border-brand-yellow">
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-gray-300 hover:text-brand-yellow transition-colors duration-200 text-left font-medium"
+                  className="font-display text-white hover:text-brand-yellow transition-colors duration-200 text-left text-2xl tracking-wide"
                 >
                   {link.name}
                 </button>
               ))}
-              <div className="pt-4 border-t border-gray-800 space-y-3">
+              <div className="pt-4 border-t border-brand-yellow space-y-3">
                 <a
                   href="tel:+19152553867"
-                  className="block text-gray-300 hover:text-brand-yellow transition-colors duration-200"
+                  className="font-display block text-white hover:text-brand-yellow transition-colors duration-200 text-xl tracking-wide"
                 >
                   Call (915) 255-DUMP
                 </a>
                 <button
                   onClick={handleOrderClick}
-                  className="w-full bg-brand-yellow text-brand-black px-6 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-all duration-200"
+                  className="font-display w-full bg-brand-yellow text-brand-black px-6 py-3 rounded-lg font-bold text-lg tracking-wide hover:bg-yellow-400 transition-all duration-200"
                 >
                   Order Online
                 </button>
