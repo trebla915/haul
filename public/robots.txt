@@ -1,0 +1,9 @@
+# robots.txt for Dump Haul Go
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://dumphaulgo.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1

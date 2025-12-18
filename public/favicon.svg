@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Black background circle -->
+  <circle cx="50" cy="50" r="50" fill="#000000"/>
+
+  <!-- Yellow dumpster icon -->
+  <g fill="#FFD800">
+    <!-- Dumpster body -->
+    <path d="M 25 45 L 30 65 L 70 65 L 75 45 Z"/>
+
+    <!-- Dumpster top opening -->
+    <rect x="28" y="40" width="44" height="5" rx="1"/>
+
+    <!-- Dumpster lid (open) -->
+    <path d="M 72 35 L 78 32 L 76 38 Z" opacity="0.9"/>
+
+    <!-- Letter D -->
+    <text x="50" y="58" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#000000">D</text>
+  </g>
+</svg>

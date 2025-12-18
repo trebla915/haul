@@ -1,0 +1,29 @@
+{
+  "name": "Dump Haul Go - Dumpster Rental El Paso",
+  "short_name": "Dump Haul Go",
+  "description": "El Paso's premier roll-off dumpster rental service. 15-yard dumpster $300 flat rate with 24-hour delivery.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#FFD800",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "utilities"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
