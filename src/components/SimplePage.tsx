@@ -32,33 +32,53 @@ const SimplePage = () => {
           </div>
         </div>
 
-        {/* Pricing */}
-        <div className="relative bg-gradient-to-br from-gray-900 to-black border-2 border-brand-yellow rounded-2xl p-6 sm:p-8 my-6 shadow-2xl shadow-brand-yellow/30 transform hover:scale-105 transition-all duration-300">
-          <div className="absolute inset-0 bg-brand-yellow/5 rounded-2xl"></div>
-          <div className="relative z-10">
-            <div className="font-display text-brand-yellow text-3xl sm:text-4xl font-bold mb-2 tracking-wide drop-shadow-lg">
-              15 YARD
-            </div>
-            <div className="font-display text-white text-5xl sm:text-6xl font-bold tracking-wide drop-shadow-2xl">
-              $300
-            </div>
-          </div>
-          {/* Decorative corner accent */}
-          <div className="absolute top-0 right-0 w-16 h-16 bg-brand-yellow/10 rounded-bl-full"></div>
-          <div className="absolute bottom-0 left-0 w-16 h-16 bg-brand-yellow/10 rounded-tr-full"></div>
-        </div>
-
         {/* Dumpster Image */}
         <div className="relative group">
-          <div className="rounded-2xl overflow-hidden border-4 border-brand-yellow shadow-2xl shadow-brand-yellow/30 transform group-hover:scale-[1.02] transition-all duration-300">
+          {/* Frosted background container */}
+          <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 shadow-2xl overflow-hidden">
             <img
               src="/dump.png"
               alt="15 Yard Dumpster"
-              className="w-full h-auto"
+              className="w-full h-auto transform group-hover:scale-105 transition-all duration-300"
             />
+            {/* Bottom gradient overlay */}
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black via-black/50 to-transparent pointer-events-none"></div>
           </div>
-          {/* Glow effect on hover */}
-          <div className="absolute inset-0 rounded-2xl bg-brand-yellow/0 group-hover:bg-brand-yellow/10 transition-all duration-300 pointer-events-none"></div>
+        </div>
+
+        {/* Pricing */}
+        <div className="relative group my-6">
+          {/* Angled cut design */}
+          <div className="relative bg-gradient-to-br from-brand-yellow via-yellow-500 to-brand-yellow p-1 transform -skew-y-2 shadow-2xl shadow-brand-yellow/40">
+            <div className="bg-gradient-to-br from-gray-950 to-black p-8 sm:p-10 transform skew-y-2">
+              <div className="flex flex-col items-center justify-center space-y-4">
+                {/* Single line title */}
+                <div className="relative">
+                  <div className="absolute inset-0 bg-brand-yellow blur-xl opacity-50"></div>
+                  <div className="relative font-display text-brand-yellow text-3xl sm:text-4xl md:text-5xl font-bold tracking-widest drop-shadow-2xl">
+                    15 YARD DUMPSTER
+                  </div>
+                </div>
+
+                {/* Price */}
+                <div className="relative pt-4">
+                  <div className="absolute inset-0 bg-white blur-2xl opacity-20"></div>
+                  <div className="relative font-display text-white text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight drop-shadow-2xl">
+                    $300
+                  </div>
+                </div>
+
+                {/* Subtitle */}
+                <div className="font-body text-gray-400 text-sm sm:text-base italic pt-2">
+                  Flat Rate • No Hidden Fees
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Animated corner accents */}
+          <div className="absolute -top-2 -left-2 w-6 h-6 bg-brand-yellow transform rotate-45 group-hover:scale-150 transition-transform duration-300"></div>
+          <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-brand-yellow transform rotate-45 group-hover:scale-150 transition-transform duration-300"></div>
         </div>
 
         {/* Service Qualities */}
@@ -71,20 +91,17 @@ const SimplePage = () => {
         </div>
 
         {/* What Can't Go In */}
-        <div className="relative bg-gradient-to-br from-red-950 to-black border-2 border-red-600 rounded-2xl p-4 sm:p-6 shadow-2xl shadow-red-600/20">
-          <div className="absolute inset-0 bg-red-900/10 rounded-2xl"></div>
-          <div className="relative z-10">
-            <div className="font-display text-red-500 text-xl sm:text-2xl font-bold mb-3 tracking-wide drop-shadow-lg">
-              ⚠️ WHAT CAN'T GO IN
-            </div>
-            <div className="font-body text-gray-300 text-sm sm:text-base space-y-1">
-              <div>• Hazmat Materials</div>
-              <div>• Paint</div>
-              <div>• Chemicals</div>
-              <div>• Tires</div>
-              <div>• Batteries</div>
-              <div>• Liquids</div>
-            </div>
+        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 shadow-2xl">
+          <div className="font-display text-brand-yellow text-xl sm:text-2xl font-bold mb-4 tracking-wide drop-shadow-lg">
+            ⚠️ WHAT CAN'T GO IN
+          </div>
+          <div className="font-body text-gray-300 text-sm sm:text-base space-y-2">
+            <div>• Hazmat Materials</div>
+            <div>• Paint</div>
+            <div>• Chemicals</div>
+            <div>• Tires</div>
+            <div>• Batteries</div>
+            <div>• Liquids</div>
           </div>
         </div>
 
