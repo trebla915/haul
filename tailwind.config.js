@@ -11,7 +11,7 @@ export default {
         'brand-black': '#000000',
       },
       fontFamily: {
-        display: ['Bebas Neue', 'Impact', 'sans-serif'],
+        display: ['Poppins', 'sans-serif'],
         body: ['Inter', 'system-ui', 'sans-serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },

@@ -1,129 +1,132 @@
 const SimplePage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-brand-black via-gray-900 to-brand-black flex items-center justify-center p-4 sm:p-8 relative overflow-hidden">
-      {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255, 216, 0, 0.1) 35px, rgba(255, 216, 0, 0.1) 70px)`
-        }}></div>
-      </div>
+    <div className="min-h-screen bg-black flex items-center justify-center p-4 sm:p-8 relative overflow-hidden">
 
       <div className="max-w-md w-full text-center space-y-6 sm:space-y-8 relative z-10">
 
-        {/* Top Section - Tighter Spacing */}
-        <div className="space-y-2 bg-black/30 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-brand-yellow/20">
-          {/* Logo */}
-          <div className="mb-2">
-            <img
-              src="/logo.png"
-              alt="Dump Haul Go"
-              className="h-40 sm:h-52 md:h-64 lg:h-72 w-auto mx-auto drop-shadow-2xl"
-            />
-          </div>
-
-          {/* Phone Number Display */}
-          <div className="font-display text-white text-2xl sm:text-3xl tracking-wider drop-shadow-lg">
-            (915) 255-DUMP
-          </div>
-
-          {/* Service Area */}
-          <div className="font-display text-brand-yellow text-lg sm:text-xl tracking-wide drop-shadow-lg">
-            El Paso, Texas Area
-          </div>
+        {/* Logo Only - Clean & Simple */}
+        <div className="relative pt-8 sm:pt-12 pb-8 mb-6 border-b-2 border-brand-yellow/30">
+          <div className="absolute inset-0 bg-brand-yellow/10 blur-3xl opacity-50"></div>
+          <img
+            src="/logo.png"
+            alt="Dump Haul Go"
+            className="h-32 sm:h-40 md:h-48 w-auto mx-auto drop-shadow-2xl relative z-10"
+          />
+          {/* Decorative accent line */}
+          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-brand-yellow to-transparent"></div>
         </div>
 
-        {/* Dumpster Image */}
-        <div className="relative group">
-          {/* Frosted background container */}
-          <div className="relative bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 shadow-2xl overflow-hidden">
-            <img
-              src="/dump.png"
-              alt="15 Yard Dumpster"
-              className="w-full h-auto transform group-hover:scale-105 transition-all duration-300"
-            />
-            {/* Bottom gradient overlay */}
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black via-black/50 to-transparent pointer-events-none"></div>
-          </div>
-        </div>
+        {/* Primary CTA - Click to Call */}
+        <a
+          href="tel:+19152553867"
+          className="block relative overflow-hidden group"
+        >
+          {/* Outer glow ring */}
+          <div className="absolute -inset-1 bg-gradient-to-r from-brand-yellow via-yellow-300 to-brand-yellow rounded-3xl blur-lg opacity-75 group-hover:opacity-100 transition duration-300"></div>
 
-        {/* Pricing */}
-        <div className="relative group my-6">
-          {/* Angled cut design */}
-          <div className="relative bg-gradient-to-br from-brand-yellow via-yellow-500 to-brand-yellow p-1 transform -skew-y-2 shadow-2xl shadow-brand-yellow/40">
-            <div className="bg-gradient-to-br from-gray-950 to-black p-8 sm:p-10 transform skew-y-2">
-              <div className="flex flex-col items-center justify-center space-y-4">
-                {/* Single line title */}
-                <div className="relative">
-                  <div className="absolute inset-0 bg-brand-yellow blur-xl opacity-50"></div>
-                  <div className="relative font-display text-brand-yellow text-3xl sm:text-4xl md:text-5xl font-bold tracking-widest drop-shadow-2xl">
-                    15 YARD DUMPSTER
-                  </div>
-                </div>
-
-                {/* Price */}
-                <div className="relative pt-4">
-                  <div className="absolute inset-0 bg-white blur-2xl opacity-20"></div>
-                  <div className="relative font-display text-white text-6xl sm:text-7xl md:text-8xl font-bold tracking-tight drop-shadow-2xl">
-                    $300
-                  </div>
-                </div>
-
-                {/* Subtitle */}
-                <div className="font-body text-gray-400 text-sm sm:text-base italic pt-2">
-                  Flat Rate • No Hidden Fees
-                </div>
+          {/* Main button */}
+          <div className="relative bg-gradient-to-br from-brand-yellow via-yellow-400 to-yellow-500 rounded-2xl p-1 shadow-2xl">
+            {/* Inner content container with border */}
+            <div className="bg-gradient-to-br from-yellow-300 via-brand-yellow to-yellow-400 rounded-2xl py-3 sm:py-4 px-6 border-2 border-yellow-200/50 group-hover:border-white/60 transition-all duration-300 group-hover:scale-[1.02] transform">
+              <div className="font-body text-sm sm:text-base text-black font-extrabold tracking-[0.15em] mb-2 drop-shadow-sm">
+                CALL NOW FOR SERVICE
+              </div>
+              <div className="font-display text-4xl sm:text-5xl md:text-6xl text-black font-bold tracking-wide leading-tight mb-2 drop-shadow-md">
+                (915) 255-DUMP
+              </div>
+              <div className="font-body text-xs sm:text-sm text-black font-bold tracking-wide flex items-center justify-center gap-2 drop-shadow-sm">
+                <svg className="w-4 h-4 group-hover:animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                El Paso, Texas Area
               </div>
             </div>
           </div>
 
-          {/* Animated corner accents */}
-          <div className="absolute -top-2 -left-2 w-6 h-6 bg-brand-yellow transform rotate-45 group-hover:scale-150 transition-transform duration-300"></div>
-          <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-brand-yellow transform rotate-45 group-hover:scale-150 transition-transform duration-300"></div>
-        </div>
-
-        {/* Service Qualities */}
-        <div className="flex justify-center gap-3 sm:gap-4 my-6 bg-black/30 backdrop-blur-sm rounded-full py-4 px-6 border border-brand-yellow/30">
-          <div className="font-display text-brand-yellow text-lg sm:text-xl tracking-wide drop-shadow-lg">FAST</div>
-          <div className="text-brand-yellow text-lg sm:text-xl">•</div>
-          <div className="font-display text-brand-yellow text-lg sm:text-xl tracking-wide drop-shadow-lg">QUICK</div>
-          <div className="text-brand-yellow text-lg sm:text-xl">•</div>
-          <div className="font-display text-brand-yellow text-lg sm:text-xl tracking-wide drop-shadow-lg">PROFESSIONAL</div>
-        </div>
-
-        {/* What Can't Go In */}
-        <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 shadow-2xl">
-          <div className="font-display text-brand-yellow text-xl sm:text-2xl font-bold mb-4 tracking-wide drop-shadow-lg">
-            ⚠️ WHAT CAN'T GO IN
-          </div>
-          <div className="font-body text-gray-300 text-sm sm:text-base space-y-2">
-            <div>• Hazmat Materials</div>
-            <div>• Paint</div>
-            <div>• Chemicals</div>
-            <div>• Tires</div>
-            <div>• Batteries</div>
-            <div>• Liquids</div>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="space-y-3 bg-black/30 backdrop-blur-sm rounded-2xl p-6 border border-brand-yellow/20">
-          <div className="font-display text-white text-lg sm:text-xl tracking-wide drop-shadow-lg">
-            TEXT OR CALL FOR SERVICE
-          </div>
-          <div className="font-display text-brand-yellow text-2xl sm:text-3xl font-bold tracking-wider drop-shadow-lg animate-pulse">
-            24 HOURS
-          </div>
-        </div>
-
-        {/* Bottom CTA Button */}
-        <a
-          href="tel:+19152553867"
-          className="block bg-gradient-to-r from-brand-yellow via-yellow-400 to-brand-yellow text-brand-black font-display text-xl sm:text-2xl font-bold py-4 sm:py-5 px-8 rounded-2xl hover:from-yellow-400 hover:via-brand-yellow hover:to-yellow-400 hover:scale-105 transition-all duration-300 tracking-wide mt-6 shadow-2xl shadow-brand-yellow/50 hover:shadow-brand-yellow/70 relative overflow-hidden group"
-        >
-          <span className="relative z-10">CALL (915) 255-DUMP</span>
           {/* Shine effect */}
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000 rounded-2xl"></div>
         </a>
+
+        {/* Dumpster Image */}
+        <div className="relative">
+          {/* Frosted background container */}
+          <div className="relative bg-white/10 backdrop-blur-md rounded-t-2xl p-6 sm:p-8 shadow-2xl">
+            <img
+              src="/dump.png"
+              alt="15 Yard Dumpster"
+              className="w-full h-auto relative z-10"
+            />
+          </div>
+
+          {/* Price Banner - Seamlessly connected to image */}
+          <div className="relative -mt-1">
+            {/* Yellow glow background */}
+            <div className="absolute inset-0 bg-brand-yellow blur-2xl opacity-20"></div>
+
+            {/* Main price container */}
+            <div className="relative bg-gradient-to-r from-brand-yellow via-yellow-400 to-brand-yellow rounded-b-2xl px-6 py-5 sm:py-6 shadow-2xl shadow-brand-yellow/40">
+              <div className="flex items-center justify-center gap-6 sm:gap-8">
+                {/* Size badge */}
+                <div className="bg-black/90 backdrop-blur-sm rounded-full px-6 py-2.5 sm:px-8 sm:py-3 border-2 border-black">
+                  <div className="font-display text-brand-yellow text-base sm:text-lg font-bold tracking-[0.25em]">
+                    15 YARD
+                  </div>
+                </div>
+
+                {/* Divider */}
+                <div className="w-px h-10 sm:h-12 bg-black/20"></div>
+
+                {/* Price */}
+                <div className="text-center">
+                  <div className="font-display text-black text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide leading-none">
+                    $300
+                  </div>
+                  <div className="font-body text-black text-xs sm:text-sm font-bold tracking-[0.15em] mt-1">
+                    FLAT RATE
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Key Benefits - Simple & Clear */}
+        <div className="grid grid-cols-3 gap-4 sm:gap-5">
+          <div className="bg-black/80 backdrop-blur-sm border-2 border-brand-yellow/50 rounded-xl p-5 sm:p-7 hover:border-brand-yellow transition-colors">
+            <div className="font-display text-brand-yellow text-2xl sm:text-3xl font-bold mb-2 tracking-wider">24HR</div>
+            <div className="font-body text-white text-xs sm:text-sm tracking-wide font-medium">Service</div>
+          </div>
+          <div className="bg-black/80 backdrop-blur-sm border-2 border-brand-yellow/50 rounded-xl p-5 sm:p-7 hover:border-brand-yellow transition-colors">
+            <div className="font-display text-brand-yellow text-2xl sm:text-3xl font-bold mb-2 tracking-wider">FLAT</div>
+            <div className="font-body text-white text-xs sm:text-sm tracking-wide font-medium">Rate</div>
+          </div>
+          <div className="bg-black/80 backdrop-blur-sm border-2 border-brand-yellow/50 rounded-xl p-5 sm:p-7 hover:border-brand-yellow transition-colors">
+            <div className="font-display text-brand-yellow text-2xl sm:text-3xl font-bold mb-2 tracking-wider">FAST</div>
+            <div className="font-body text-white text-xs sm:text-sm tracking-wide font-medium">Delivery</div>
+          </div>
+        </div>
+
+        {/* What Can't Go In - Compact */}
+        <details className="bg-black/70 backdrop-blur-sm rounded-xl border-2 border-white/20 overflow-hidden group hover:border-brand-yellow/40 transition-colors">
+          <summary className="cursor-pointer px-6 py-4 flex items-center justify-between hover:bg-black/50 transition-colors">
+            <span className="font-display text-brand-yellow text-base sm:text-lg font-bold tracking-wide">
+              ⚠️ What Can't Go In
+            </span>
+            <svg className="w-5 h-5 text-brand-yellow transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div className="px-6 pb-4 pt-2 bg-black/50">
+            <div className="font-body text-white text-xs sm:text-sm grid grid-cols-2 gap-2 font-medium">
+              <div>• Hazmat</div>
+              <div>• Paint</div>
+              <div>• Chemicals</div>
+              <div>• Tires</div>
+              <div>• Batteries</div>
+              <div>• Liquids</div>
+            </div>
+          </div>
+        </details>
 
       </div>
     </div>
