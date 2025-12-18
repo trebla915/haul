@@ -8,17 +8,9 @@ const SimplePage = () => {
           <img
             src="/logo.png"
             alt="Dump Haul Go"
-            className="h-24 sm:h-32 w-auto mx-auto"
+            className="h-32 sm:h-40 md:h-48 w-auto mx-auto"
           />
         </div>
-
-        {/* Phone Number - Large Yellow Button */}
-        <a
-          href="tel:+19152553867"
-          className="block bg-brand-yellow text-brand-black font-display text-2xl sm:text-3xl font-bold py-4 sm:py-5 px-8 rounded-lg hover:bg-yellow-400 hover:scale-105 transition-all duration-200 tracking-wide shadow-2xl hover:shadow-brand-yellow/50"
-        >
-          📞 CALL NOW
-        </a>
 
         {/* Phone Number Display */}
         <div className="font-display text-white text-3xl sm:text-4xl tracking-wider">
@@ -27,7 +19,7 @@ const SimplePage = () => {
 
         {/* Service Area */}
         <div className="font-display text-brand-yellow text-xl sm:text-2xl tracking-wide">
-          El Paso Area
+          El Paso, Texas Area
         </div>
 
         {/* Pricing */}
