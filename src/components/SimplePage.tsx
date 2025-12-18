@@ -52,7 +52,7 @@ const SimplePage = () => {
         <div className="relative group">
           <div className="rounded-2xl overflow-hidden border-4 border-brand-yellow shadow-2xl shadow-brand-yellow/30 transform group-hover:scale-[1.02] transition-all duration-300">
             <img
-              src="/dump.jpg"
+              src="/dump.png"
               alt="15 Yard Dumpster"
               className="w-full h-auto"
             />
