@@ -3,23 +3,26 @@ const SimplePage = () => {
     <div className="min-h-screen bg-brand-black flex items-center justify-center p-4 sm:p-8">
       <div className="max-w-md w-full text-center space-y-6 sm:space-y-8">
 
-        {/* Logo */}
-        <div className="mb-4 sm:mb-6">
-          <img
-            src="/logo.png"
-            alt="Dump Haul Go"
-            className="h-32 sm:h-40 md:h-48 w-auto mx-auto"
-          />
-        </div>
+        {/* Top Section - Tighter Spacing */}
+        <div className="space-y-2">
+          {/* Logo */}
+          <div className="mb-4 sm:mb-6">
+            <img
+              src="/logo.png"
+              alt="Dump Haul Go"
+              className="h-32 sm:h-40 md:h-48 w-auto mx-auto"
+            />
+          </div>
 
-        {/* Phone Number Display */}
-        <div className="font-display text-white text-3xl sm:text-4xl tracking-wider">
-          (915) 255-DUMP
-        </div>
+          {/* Phone Number Display */}
+          <div className="font-display text-white text-3xl sm:text-4xl tracking-wider">
+            (915) 255-DUMP
+          </div>
 
-        {/* Service Area */}
-        <div className="font-display text-brand-yellow text-xl sm:text-2xl tracking-wide">
-          El Paso, Texas Area
+          {/* Service Area */}
+          <div className="font-display text-brand-yellow text-xl sm:text-2xl tracking-wide">
+            El Paso, Texas Area
+          </div>
         </div>
 
         {/* Pricing */}
