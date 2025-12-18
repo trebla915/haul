@@ -17,17 +17,17 @@ const SimplePage = () => {
             <img
               src="/logo.png"
               alt="Dump Haul Go"
-              className="h-32 sm:h-40 md:h-48 w-auto mx-auto drop-shadow-2xl"
+              className="h-40 sm:h-52 md:h-64 lg:h-72 w-auto mx-auto drop-shadow-2xl"
             />
           </div>
 
           {/* Phone Number Display */}
-          <div className="font-display text-white text-3xl sm:text-4xl tracking-wider drop-shadow-lg">
+          <div className="font-display text-white text-2xl sm:text-3xl tracking-wider drop-shadow-lg">
             (915) 255-DUMP
           </div>
 
           {/* Service Area */}
-          <div className="font-display text-brand-yellow text-xl sm:text-2xl tracking-wide drop-shadow-lg">
+          <div className="font-display text-brand-yellow text-lg sm:text-xl tracking-wide drop-shadow-lg">
             El Paso, Texas Area
           </div>
         </div>
