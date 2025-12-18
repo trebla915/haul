@@ -13,7 +13,7 @@ const SimplePage = () => {
         {/* Top Section - Tighter Spacing */}
         <div className="space-y-2 bg-black/30 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-brand-yellow/20">
           {/* Logo */}
-          <div className="mb-4 sm:mb-6">
+          <div className="mb-2">
             <img
               src="/logo.png"
               alt="Dump Haul Go"
