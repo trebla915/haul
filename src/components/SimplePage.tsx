@@ -29,7 +29,7 @@ const SimplePage = () => {
             {/* Inner content container with border */}
             <div className="bg-gradient-to-br from-yellow-300 via-brand-yellow to-yellow-400 rounded-2xl py-3 sm:py-4 px-6 border-2 border-yellow-200/50 group-hover:border-white/60 transition-all duration-300 group-hover:scale-[1.02] transform">
               <div className="font-body text-sm sm:text-base text-black font-extrabold tracking-[0.15em] mb-2 drop-shadow-sm">
-                CALL NOW FOR SERVICE
+                CALL OR TEXT FOR SERVICE
               </div>
               <div className="font-display text-4xl sm:text-5xl md:text-6xl text-black font-bold tracking-wide leading-tight mb-2 drop-shadow-md">
                 (915) 255-DUMP
