@@ -128,6 +128,28 @@ const SimplePage = () => {
           </div>
         </details>
 
+        {/* Footer - Google Compliant */}
+        <footer className="pt-8 pb-4 border-t border-white/10">
+          <div className="flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm">
+            <a
+              href="/terms"
+              className="text-white/60 hover:text-brand-yellow transition-colors font-body font-medium"
+            >
+              Terms of Service
+            </a>
+            <span className="text-white/30">|</span>
+            <a
+              href="/privacy"
+              className="text-white/60 hover:text-brand-yellow transition-colors font-body font-medium"
+            >
+              Privacy Policy
+            </a>
+          </div>
+          <div className="text-center mt-3 text-xs text-white/40 font-body">
+            © {new Date().getFullYear()} Dump Haul Go. All rights reserved.
+          </div>
+        </footer>
+
       </div>
     </div>
   );
